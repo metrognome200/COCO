@@ -14,7 +14,7 @@ export const CocoCharacter: React.FC<CocoCharacterProps> = ({ onClick, clickPowe
     >
       <div className="relative w-48 h-48 bg-gray-700 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow">
         <img 
-          src="https://github.com/metrognome200/COCO/blob/main/dist/gmm.png" 
+          src="https://donotpoly.ir/coco/gmm.png" 
           alt="COCO the Gnome" 
           className="w-40 h-40 object-cover rounded-full"
         />
