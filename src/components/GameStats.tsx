@@ -10,18 +10,18 @@ interface GameStatsProps {
 export const GameStats: React.FC<GameStatsProps> = ({ cocoCoins, stats }) => {
   return (
     <div className="flex gap-4">
-      <div className="bg-yellow-100 rounded-lg p-4 flex items-center gap-2">
-        <Coins className="text-yellow-600" />
+      <div className="bg-gray-800 rounded-lg p-4 flex items-center gap-2">
+        <Coins className="text-yellow-400" />
         <div>
-          <p className="text-sm text-yellow-700">COCO Coins</p>
-          <p className="text-xl font-bold text-yellow-900">{cocoCoins.toLocaleString()}</p>
+          <p className="text-sm text-gray-300">COCO Coins</p>
+          <p className="text-xl font-bold text-white">{cocoCoins.toLocaleString()}</p>
         </div>
       </div>
-      <div className="bg-green-100 rounded-lg p-4 flex items-center gap-2">
-        <TrendingUp className="text-green-600" />
+      <div className="bg-gray-800 rounded-lg p-4 flex items-center gap-2">
+        <TrendingUp className="text-green-400" />
         <div>
-          <p className="text-sm text-green-700">Coins per Second</p>
-          <p className="text-xl font-bold text-green-900">{stats.coinsPerSecond.toFixed(1)}</p>
+          <p className="text-sm text-gray-300">Coins per Second</p>
+          <p className="text-xl font-bold text-white">{stats.coinsPerSecond.toFixed(1)}</p>
         </div>
       </div>
     </div>
