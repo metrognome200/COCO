@@ -7,30 +7,30 @@ import type { GameState, GameStats as GameStatsType, Upgrade } from './types/gam
 const initialUpgrades: Upgrade[] = [
   {
     id: 'magic-wand',
-    name: 'Magic Wand',
+    name: 'Rich Gnome',
     description: 'Increases click power by 2',
     cost: 10,
-    multiplier: 2,
+    multiplier: 0.2,
     owned: 0,
-    image: 'https://images.unsplash.com/photo-1515630278258-407f66498911?w=100&h=100&fit=crop'
+    image: 'https://github.com/metrognome200/COCO/blob/main/dist/gnome1.jpg'
   },
   {
-    id: 'garden-helper',
+    id: 'Damn Gnome',
     name: 'Garden Helper',
-    description: 'Automatically generates 1 coin per second',
+    description: 'Automatically generates 0.1 coin per second',
     cost: 50,
-    multiplier: 1,
+    multiplier: 0.1,
     owned: 0,
-    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=100&h=100&fit=crop'
+    image: 'https://github.com/metrognome200/COCO/blob/main/dist/gnome2.jpg'
   },
   {
-    id: 'mushroom-farm',
+    id: 'little one',
     name: 'Mushroom Farm',
-    description: 'Generates 5 coins per second',
+    description: 'Generates 0.5 coins per second',
     cost: 200,
-    multiplier: 5,
+    multiplier: 0.5,
     owned: 0,
-    image: 'https://images.unsplash.com/photo-1542827387-4c54fb7e47f3?w=100&h=100&fit=crop'
+    image: 'https://github.com/metrognome200/COCO/blob/main/dist/gnome3.jpg'
   }
 ];
 
