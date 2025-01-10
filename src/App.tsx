@@ -97,7 +97,7 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-gray-800 to-gray-900 p-8">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-center text-white mb-8">
-          COCO's Clicker Adventure
+          $COCO's Clicker
         </h1>
         <GameStats cocoCoins={gameState.cocoCoins} stats={stats} />
         <div className="mt-8 flex flex-col items-center gap-8">
