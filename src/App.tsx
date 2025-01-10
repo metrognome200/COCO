@@ -8,7 +8,7 @@ const initialUpgrades: Upgrade[] = [
   {
     id: 'magic-wand',
     name: 'Rich Gnome',
-    description: 'Increases click power by 2',
+    description: 'Increases click power by 0.2',
     cost: 10,
     multiplier: 0.2,
     owned: 0,
@@ -43,7 +43,7 @@ const initialState: GameState = {
 
 function App() {
   const [gameState, setGameState] = useState<GameState>(initialState);
-
+  
   const stats: GameStatsType = {
     coinsPerSecond: gameState.upgrades.reduce((acc, upgrade) => {
       if (upgrade.id !== 'magic-wand') {
@@ -61,7 +61,6 @@ function App() {
         cocoCoins: prev.cocoCoins + stats.coinsPerSecond
       }));
     }, 1000);
-
     return () => clearInterval(timer);
   }, [stats.coinsPerSecond]);
 
@@ -77,14 +76,12 @@ function App() {
     setGameState(prev => {
       const upgrade = prev.upgrades.find(u => u.id === upgradeId);
       if (!upgrade || prev.cocoCoins < upgrade.cost) return prev;
-
       const updatedUpgrades = prev.upgrades.map(u => {
         if (u.id === upgradeId) {
           return { ...u, owned: u.owned + 1 };
         }
         return u;
       });
-
       return {
         ...prev,
         cocoCoins: prev.cocoCoins - upgrade.cost,
@@ -97,17 +94,14 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-100 to-pink-100 p-8">
+    <div className="min-h-screen bg-gradient-to-br from-gray-800 to-gray-900 p-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-center text-purple-800 mb-8">
+        <h1 className="text-4xl font-bold text-center text-white mb-8">
           COCO's Clicker Adventure
         </h1>
-        
         <GameStats cocoCoins={gameState.cocoCoins} stats={stats} />
-        
         <div className="mt-8 flex flex-col items-center gap-8">
           <CocoCharacter onClick={handleClick} clickPower={gameState.clickPower} />
-          
           <div className="w-full">
             <UpgradeShop 
               upgrades={gameState.upgrades}
