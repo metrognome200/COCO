@@ -12,7 +12,7 @@ const initialUpgrades: Upgrade[] = [
     cost: 10,
     multiplier: 0.2,
     owned: 0,
-    image: 'https://github.com/metrognome200/COCO/blob/fd2428df351b566b978857287e4b5b1ba971831d/dist/gnome3.jpg'
+    image: 'https://donotpoly.ir/coco/gnome1.jpg'
   },
   {
     id: 'Damn Gnome',
@@ -21,7 +21,7 @@ const initialUpgrades: Upgrade[] = [
     cost: 50,
     multiplier: 0.1,
     owned: 0,
-    image: 'https://github.com/metrognome200/COCO/blob/main/dist/gnome2.jpg'
+    image: 'https://donotpoly.ir/coco/gnome2.jpg'
   },
   {
     id: 'little one',
@@ -30,7 +30,7 @@ const initialUpgrades: Upgrade[] = [
     cost: 200,
     multiplier: 0.5,
     owned: 0,
-    image: 'https://github.com/metrognome200/COCO/blob/main/dist/gnome3.jpg'
+    image: 'https://donotpoly.ir/coco/gnome3.jpg'
   }
 ];
 
