@@ -12,15 +12,15 @@ export const CocoCharacter: React.FC<CocoCharacterProps> = ({ onClick, clickPowe
       className="relative cursor-pointer transform transition-transform active:scale-95"
       onClick={onClick}
     >
-      <div className="relative w-48 h-48 bg-green-100 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow">
+      <div className="relative w-48 h-48 bg-gray-700 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow">
         <img 
-          src="https://images.unsplash.com/photo-1610041518868-f9284e7eecfe?w=200&h=200&fit=crop" 
+          src="https://github.com/metrognome200/COCO/blob/main/dist/gmm.png" 
           alt="COCO the Gnome" 
           className="w-40 h-40 object-cover rounded-full"
         />
         <Sparkles className="absolute -top-2 -right-2 text-yellow-400 w-8 h-8" />
       </div>
-      <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-sm font-bold shadow-md">
+      <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-yellow-600 text-white px-3 py-1 rounded-full text-sm font-bold shadow-md">
         +{clickPower} per click
       </div>
     </div>
